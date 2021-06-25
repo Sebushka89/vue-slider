@@ -1,18 +1,38 @@
+#app {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to bottom, #9900ff 0%, #66ff66 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider-picture{
+    position: relative;
+}
 .slider-picture img{
     width: 100%;
+    height: 100%;
 }
 .arrow {
     font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 .slider-dots{
     text-align: center;
-    width: 100%;
-    margin-top: -100px;
-    color: white;
+    position: absolute;
+    top: 80%;
+    left: 40%;
     background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    padding: 10px;
 }
 .slider-dots i{
-    margin-left: 32px;
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 .slider-dots .current{
     color:rgb(253,187,64);

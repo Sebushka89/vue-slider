@@ -13,7 +13,7 @@
 </head>
 <body>
     <div id="app">
-        <div class="slider container">
+        <div class="container">
             <div class="row">
                 <div class="col-1 arrow" @click ="prev">
                     <i class="fas fa-arrow-circle-left"></i>
@@ -23,7 +23,7 @@
                     <div class="slider-dots">
                         <i :class="isCurrentPosition(index)"
                         v-for="(image,index) in images"
-                        class="fas fa-circle"
+                        class="far fa-circle"
                         @click="moveTo(index)"></i>
                     </div>
                 </div>

@@ -16,7 +16,7 @@ new Vue(
         created(){
             setInterval(()=>{
                 this.next();
-            }, 3000)
+            }, 5000)
         },
         methods:{
             next: function(){

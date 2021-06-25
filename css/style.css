@@ -44,6 +44,7 @@ i{
 .slider-mini-picture img{
     display: inline;
     width: 25%;
+    height: 100%;
     opacity: 0.5;
     border: 1px solid black;
     cursor: pointer;

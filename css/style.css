@@ -1,3 +1,22 @@
 .slider-picture img{
     width: 100%;
 }
+.arrow {
+    font-size: 50px;
+}
+.slider-dots{
+    text-align: center;
+    width: 100%;
+    margin-top: -100px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.slider-dots i{
+    margin-left: 32px;
+}
+.slider-dots .current{
+    color:rgb(253,187,64);
+}
+i{
+    cursor: pointer;
+}

@@ -12,8 +12,7 @@
 .slider-picture img{
     width: 100%;
     height: 100%;
-    border: 1px solid white;
-    border-radius: 15px;
+    border: 1px solid black;
 }
 .arrow {
     font-size: 50px;
@@ -41,4 +40,14 @@
 }
 i{
     cursor: pointer;
+}
+.slider-mini-picture img{
+    display: inline;
+    width: 25%;
+    opacity: 0.5;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.slider-mini-picture .current{
+    opacity: 1;
 }

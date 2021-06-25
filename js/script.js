@@ -38,9 +38,9 @@ new Vue(
             },
             isCurrentPosition: function(index){
                 if(index===this.imageIndex){
-                    return 'current';
+                    return 'fas fa-circle';
                 }else{
-                    return ''
+                    return 'far fa-circle'
                 }
             }    
         },

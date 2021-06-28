@@ -17,7 +17,7 @@ new Vue(
         created(){
             this.intervallo=setInterval(()=>{
                 this.next();
-            }, 5000)
+            }, 3000)
         },
         methods:{
             next: function(){
@@ -29,7 +29,7 @@ new Vue(
                 clearInterval(this.intervallo);
                 this.intervallo=setInterval(()=>{
                     this.next();
-                }, 5000)
+                }, 3000)
             },
             prev: function(){
                 if (this.imageIndex === 0){
@@ -40,14 +40,14 @@ new Vue(
                 clearInterval(this.intervallo);
                 this.intervallo=setInterval(()=>{
                     this.next();
-                }, 5000)
+                }, 3000)
             },
             moveTo: function(index){
                 this.imageIndex=index;
                 clearInterval(this.intervallo);
                 this.intervallo=setInterval(()=>{
                     this.next();
-                }, 5000)
+                }, 3000)
             },
             isCurrentPosition: function(index){
                 if(index===this.imageIndex){

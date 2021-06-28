@@ -15,10 +15,7 @@
     <div id="app">
         <div class="container">
             <div class="row">
-                <div class="col-1 arrow" @click ="prev">
-                    <i class="fas fa-arrow-circle-left"></i>
-                </div>
-                <div class="col-10 slider-picture">
+                <div class="col-12 slider-picture">
                     <img :src="images[imageIndex]" alt="">
                     <div class="slider-dots">
                         <i :class="isCurrentPosition(index)"
@@ -26,17 +23,20 @@
                         @click="moveTo(index)"></i>
                     </div>
                 </div>
-                <div class="col-1 arrow" @click ="next">
-                    <i class="fas fa-arrow-circle-right"></i>
-                </div>
             </div>
             <div class="row">
-                <div class="col-10 offset-1 slider-mini-picture">
+                <div class="col-1 arrow" @click ="prev">
+                    <i class="fas fa-arrow-circle-left"></i>
+                </div>
+                <div class="col-10 slider-mini-picture">
                     <img 
                     :class="isCurrentPosition(index)"
                     v-for="(image,index) in images"
                     :src="image" alt=""
                     @click="moveTo(index)">
+                </div>
+                <div class="col-1 arrow" @click ="next">
+                    <i class="fas fa-arrow-circle-right"></i>
                 </div>
             </div>
         </div>

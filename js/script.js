@@ -12,11 +12,12 @@ new Vue(
                 'https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Fbatman-arkham-asylum%2Fhome%2FEGS_WB_Batman_Arkham_Asylum_L1_2560x1440_19_0911-2560x1440-bdfb966b14e5f9bb6a2bf48a148d36566ca96df0.jpg'
             ],
             imageIndex: 0,
+            intervallo: null,
         },
         created(){
-            setInterval(()=>{
+            this.intervallo=setInterval(()=>{
                 this.next();
-            }, 3000)
+            }, 5000)
         },
         methods:{
             next: function(){
@@ -24,17 +25,29 @@ new Vue(
                     this.imageIndex = 0;
                 }else{
                     this.imageIndex++;
-                }
+                };
+                clearInterval(this.intervallo);
+                this.intervallo=setInterval(()=>{
+                    this.next();
+                }, 5000)
             },
             prev: function(){
                 if (this.imageIndex === 0){
                     this.imageIndex = (this.images.length - 1);
                 }else{
                     this.imageIndex--;
-                }
+                };
+                clearInterval(this.intervallo);
+                this.intervallo=setInterval(()=>{
+                    this.next();
+                }, 5000)
             },
             moveTo: function(index){
                 this.imageIndex=index;
+                clearInterval(this.intervallo);
+                this.intervallo=setInterval(()=>{
+                    this.next();
+                }, 5000)
             },
             isCurrentPosition: function(index){
                 if(index===this.imageIndex){

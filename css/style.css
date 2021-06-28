@@ -6,14 +6,17 @@
     justify-content: center;
     align-items: center;
 }
+
 .slider-picture{
     position: relative;
 }
+
 .slider-picture img{
     width: 100%;
     height: 100%;
     border: 1px solid black;
 }
+
 .arrow {
     font-size: 50px;
     display: flex;
@@ -21,6 +24,7 @@
     align-items: center;
     color: white;
 }
+
 .slider-dots{
     text-align: center;
     position: absolute;
@@ -30,17 +34,21 @@
     border-radius: 50px;
     padding: 10px;
 }
+
 .slider-dots i{
     color: white;
     padding-right: 10px;
     padding-left: 10px;
 }
+
 .slider-dots .current{
     color:rgb(253,187,64);
 }
+
 i{
     cursor: pointer;
 }
+
 .slider-mini-picture img{
     display: inline;
     width: 25%;
@@ -49,6 +57,7 @@ i{
     border: 1px solid black;
     cursor: pointer;
 }
+
 .slider-mini-picture .current{
     opacity: 1;
 }
